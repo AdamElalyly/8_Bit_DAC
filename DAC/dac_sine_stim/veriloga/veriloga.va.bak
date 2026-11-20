@@ -1,0 +1,13 @@
+// VerilogA for DAC, dac_sine_stim, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dac_sine_stim;
+parameter real vdd = 1.2 ;
+parameter real trf = 1e-09 ;
+parameter real ftest = 19531.2 ;
+parameter real fs = 1e+06 ;
+
+
+endmodule

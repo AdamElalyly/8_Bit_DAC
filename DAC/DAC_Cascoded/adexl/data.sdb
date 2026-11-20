@@ -1,0 +1,1353 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>DAC:DAC_Cascoded:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>DAC_Cascoded</value>
+					</option>
+					<option>lib
+						<value>DAC</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>DAC:DAC_Cascoded:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>DAC_Cascoded</value>
+					</option>
+					<option>lib
+						<value>DAC</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>1. Average LSB Step (V_lsb)
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<vars>
+			<var>BINARY_0
+				<value>1</value>
+				<dependentTests>
+					<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>BINARY_1
+				<value>2</value>
+				<dependentTests>
+					<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>BINARY_2
+				<value>4</value>
+				<dependentTests>
+					<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>BINARY_3
+				<value>8</value>
+				<dependentTests>
+					<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>BINARY_4
+				<value>16</value>
+				<dependentTests>
+					<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>multiplayers_UNARY
+				<value>32</value>
+				<dependentTests>
+					<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value>                            </value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 11:41:13 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_114113255</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 11:42:29 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_114230130</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 11:45:03 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_114503699</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 11:48:09 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_114809346</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1. Average LSB Step (V_lsb)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 11:58:11 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_115811431</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1. Average LSB Step (V_lsb)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 12:02:23 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_120223401</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1. Average LSB Step (V_lsb)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>34</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 12:12:41 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_121241269</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1. Average LSB Step (V_lsb)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 12:14:58 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_121459023</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1. Average LSB Step (V_lsb)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 12:46:43 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_124643466</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>DAC:DAC_Cascoded:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>DAC:DAC_Cascoded:1_none_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DAC_Cascoded</value>
+							</option>
+							<option>lib
+								<value>DAC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1. Average LSB Step (V_lsb)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>BINARY_0
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_1
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_2
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_3
+						<value>8</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BINARY_4
+						<value>16</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>multiplayers_UNARY
+						<value>32</value>
+						<dependentTests>
+							<dependentTest omitted="0">DAC:DAC_Cascoded:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 13:10:38 2026
+</timestamp>
+			<resultsname>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/ic_centos_131038310</localpsfdir>
+			<psfdir>/home/centos/simulation/DAC/DAC_Cascoded/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/DAC/DAC_Cascoded/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/centos/DAC/DAC/DAC_Cascoded/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

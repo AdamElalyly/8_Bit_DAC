@@ -1,0 +1,29 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dac_dc_ctrl(B7, B6, B5, B4, B3, B2, B1, B0, B4_b, B3_b, B2_b, B1_b, B0_b);
+  output B7, B6, B5, B4, B3, B2, B1, B0;
+  output B4_b, B3_b, B2_b, B1_b, B0_b;
+  electrical B7, B6, B5, B4, B3, B2, B1, B0;
+  electrical B4_b, B3_b, B2_b, B1_b, B0_b;
+
+  parameter integer code = 0 from [0:255];
+  parameter real vdd = 1.2;
+
+  analog begin
+    V(B7)   <+ ((code >> 7) & 1) ? vdd : 0.0;
+    V(B6)   <+ ((code >> 6) & 1) ? vdd : 0.0;
+    V(B5)   <+ ((code >> 5) & 1) ? vdd : 0.0;
+    V(B4)   <+ ((code >> 4) & 1) ? vdd : 0.0;
+    V(B3)   <+ ((code >> 3) & 1) ? vdd : 0.0;
+    V(B2)   <+ ((code >> 2) & 1) ? vdd : 0.0;
+    V(B1)   <+ ((code >> 1) & 1) ? vdd : 0.0;
+    V(B0)   <+ ((code >> 0) & 1) ? vdd : 0.0;
+
+    V(B4_b) <+ ((code >> 4) & 1) ? 0.0 : vdd;
+    V(B3_b) <+ ((code >> 3) & 1) ? 0.0 : vdd;
+    V(B2_b) <+ ((code >> 2) & 1) ? 0.0 : vdd;
+    V(B1_b) <+ ((code >> 1) & 1) ? 0.0 : vdd;
+    V(B0_b) <+ ((code >> 0) & 1) ? 0.0 : vdd;
+  end
+endmodule

@@ -1,0 +1,38 @@
+// VerilogA for DAC, dac_ramp_stim, dac_sine_stim
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dac_ramp_stim(B0, B0_b, B1, B1_b, B2, B2_b, B3, B3_b, B4, B4_b, B5, B6, B7);
+output B0;
+electrical B0;
+output B0_b;
+electrical B0_b;
+output B1;
+electrical B1;
+output B1_b;
+electrical B1_b;
+output B2;
+electrical B2;
+output B2_b;
+electrical B2_b;
+output B3;
+electrical B3;
+output B3_b;
+electrical B3_b;
+output B4;
+electrical B4;
+output B4_b;
+electrical B4_b;
+output B5;
+electrical B5;
+output B6;
+electrical B6;
+output B7;
+electrical B7;
+parameter real vdd = 1.2 ;
+parameter real trf = 1e-09 ;
+parameter real t_step = 1e-06 ;
+
+
+endmodule

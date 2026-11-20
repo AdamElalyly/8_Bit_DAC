@@ -1,0 +1,2 @@
+SOFTINCLUDE /home/centos/cds.lib
+DEFINE DAC /home/centos/DAC/DAC

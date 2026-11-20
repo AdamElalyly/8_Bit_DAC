@@ -1,0 +1,65 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module thermometer_decoder_3to7 (
+    input  B7, B6, B5,                          // 3 MSB inputs (B7 is MSB)
+    output T6, T5, T4, T3, T2, T1, T0,          // 7 Unary thermometer outputs
+    output T6_b, T5_b, T4_b, T3_b, T2_b, T1_b, T0_b // Complementary outputs for differential switches
+);
+
+    electrical B7, B6, B5;
+    electrical T6, T5, T4, T3, T2, T1, T0;
+    electrical T6_b, T5_b, T4_b, T3_b, T2_b, T1_b, T0_b;
+
+    // Design parameters matching 65nm 1.2V supply
+    parameter real vdd   = 1.2;    // Logic high voltage (V)
+    parameter real vss   = 0.0;    // Logic low voltage (V)
+    parameter real vth   = 0.6;    // Input switching threshold (V)
+    parameter real trise = 50p;    // Output rise time (s)
+    parameter real tfall = 50p;    // Output fall time (s)
+    parameter real tdel  = 10p;    // Propagation delay (s)
+
+    integer code;
+    real t_val[0:6];
+    real tb_val[0:6];
+    genvar i;
+
+    analog begin
+        // Sample inputs and trigger crossover events for accurate transient stepping
+        @(cross(V(B7) - vth, 0) or cross(V(B6) - vth, 0) or cross(V(B5) - vth, 0));
+
+        // Convert 3 MSB analog voltages into an integer from 0 to 7
+        code = ((V(B7) > vth) ? 4 : 0) +
+               ((V(B6) > vth) ? 2 : 0) +
+               ((V(B5) > vth) ? 1 : 0);
+
+        // Compute 7-bit thermometer code and complements
+        for (i = 0; i < 7; i = i + 1) begin
+            if (code > i) begin
+                t_val[i]  = vdd;
+                tb_val[i] = vss;
+            end else begin
+                t_val[i]  = vss;
+                tb_val[i] = vdd;
+            end
+        end
+
+        // Drive smooth output transitions
+        V(T0)   <+ transition(t_val[0],  tdel, trise, tfall);
+        V(T1)   <+ transition(t_val[1],  tdel, trise, tfall);
+        V(T2)   <+ transition(t_val[2],  tdel, trise, tfall);
+        V(T3)   <+ transition(t_val[3],  tdel, trise, tfall);
+        V(T4)   <+ transition(t_val[4],  tdel, trise, tfall);
+        V(T5)   <+ transition(t_val[5],  tdel, trise, tfall);
+        V(T6)   <+ transition(t_val[6],  tdel, trise, tfall);
+
+        V(T0_b) <+ transition(tb_val[0], tdel, trise, tfall);
+        V(T1_b) <+ transition(tb_val[1], tdel, trise, tfall);
+        V(T2_b) <+ transition(tb_val[2], tdel, trise, tfall);
+        V(T3_b) <+ transition(tb_val[3], tdel, trise, tfall);
+        V(T4_b) <+ transition(tb_val[4], tdel, trise, tfall);
+        V(T5_b) <+ transition(tb_val[5], tdel, trise, tfall);
+        V(T6_b) <+ transition(tb_val[6], tdel, trise, tfall);
+    end
+
+endmodule

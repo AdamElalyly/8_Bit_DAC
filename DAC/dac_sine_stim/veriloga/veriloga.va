@@ -1,0 +1,50 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dac_sine_stim(B7, B6, B5, B4, B3, B2, B1, B0, B4_b, B3_b, B2_b, B1_b, B0_b);
+  output B7, B6, B5, B4, B3, B2, B1, B0;
+  output B4_b, B3_b, B2_b, B1_b, B0_b;
+  electrical B7, B6, B5, B4, B3, B2, B1, B0;
+  electrical B4_b, B3_b, B2_b, B1_b, B0_b;
+
+  parameter real fs    = 1.0e6;        // 1 MHz sampling/update rate
+  parameter real ftest = 19531.25;     // (5 / 256) * 1 MHz coherent frequency
+  parameter real trf   = 1.0e-9;       // 1 ns rise/fall time
+  parameter real vdd   = 1.2;
+
+  integer code;
+  real phase;
+  real sine_val;
+
+  analog begin
+    @(initial_step) begin
+      phase = 0.0;
+      code  = 128; // Mid-scale start (sin(0) = 0 -> code 127.5)
+    end
+
+    // Update digital code every 1 us (1 MHz)
+    @(timer(0.0, 1.0/fs)) begin
+      sine_val = 127.5 + 127.5 * sin(2.0 * `M_PI * ftest * $abstime);
+      code = floor(sine_val + 0.5); // Round to nearest integer [0..255]
+      if (code > 255) code = 255;
+      if (code < 0)   code = 0;
+    end
+
+    // 8-bit outputs (B7..B0)
+    V(B7)   <+ transition(((code >> 7) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B6)   <+ transition(((code >> 6) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B5)   <+ transition(((code >> 5) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B4)   <+ transition(((code >> 4) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B3)   <+ transition(((code >> 3) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B2)   <+ transition(((code >> 2) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B1)   <+ transition(((code >> 1) & 1) ? vdd : 0.0, 0, trf, trf);
+    V(B0)   <+ transition(((code >> 0) & 1) ? vdd : 0.0, 0, trf, trf);
+
+    // Complementary 5 LSB outputs (B4_b..B0_b)
+    V(B4_b) <+ transition(((code >> 4) & 1) ? 0.0 : vdd, 0, trf, trf);
+    V(B3_b) <+ transition(((code >> 3) & 1) ? 0.0 : vdd, 0, trf, trf);
+    V(B2_b) <+ transition(((code >> 2) & 1) ? 0.0 : vdd, 0, trf, trf);
+    V(B1_b) <+ transition(((code >> 1) & 1) ? 0.0 : vdd, 0, trf, trf);
+    V(B0_b) <+ transition(((code >> 0) & 1) ? 0.0 : vdd, 0, trf, trf);
+  end
+endmodule
