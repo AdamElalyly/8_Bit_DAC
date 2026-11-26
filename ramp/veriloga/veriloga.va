@@ -1,0 +1,63 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dac_ramp_stim(B7, B6, B5, B4, B3, B2, B1, B0, B4_b, B3_b, B2_b, B1_b, B0_b);
+  output B7, B6, B5, B4, B3, B2, B1, B0;
+  output B4_b, B3_b, B2_b, B1_b, B0_b;
+  electrical B7, B6, B5, B4, B3, B2, B1, B0;
+  electrical B4_b, B3_b, B2_b, B1_b, B0_b;
+
+  parameter real t_step   = 1.0e-6;   // 1 us per code for full settling[cite: 3, 6]
+  parameter real trf      = 1.0e-9;   // 1 ns edge transition[cite: 3, 6]
+  parameter real td_skew  = 0.45e-9;  // Strong low-crosspoint skew (0.45 ns for 1 ns edge)
+  parameter real vdd      = 2.5;
+
+  integer code;
+  real b7_v, b6_v, b5_v, b4_v, b3_v, b2_v, b1_v, b0_v;
+  real b4b_v, b3b_v, b2b_v, b1b_v, b0b_v;
+
+  analog begin
+    @(initial_step) begin
+      code = 0;
+    end
+
+
+    // Increment code every 1 us from 0 up to 255[cite: 3]
+    @(timer(t_step, t_step)) begin
+      if (code < 255)
+        code = code + 1;
+    end
+
+    b7_v  = ((code >> 7) & 1) ? vdd : 0.0;
+    b6_v  = ((code >> 6) & 1) ? vdd : 0.0;
+    b5_v  = ((code >> 5) & 1) ? vdd : 0.0;
+    b4_v  = ((code >> 4) & 1) ? vdd : 0.0;
+    b3_v  = ((code >> 3) & 1) ? vdd : 0.0;
+    b2_v  = ((code >> 2) & 1) ? vdd : 0.0;
+    b1_v  = ((code >> 1) & 1) ? vdd : 0.0;
+    b0_v  = ((code >> 0) & 1) ? vdd : 0.0;
+
+    b4b_v = ((code >> 4) & 1) ? 0.0 : vdd;
+    b3b_v = ((code >> 3) & 1) ? 0.0 : vdd;
+    b2b_v = ((code >> 2) & 1) ? 0.0 : vdd;
+    b1b_v = ((code >> 1) & 1) ? 0.0 : vdd;
+    b0b_v = ((code >> 0) & 1) ? 0.0 : vdd;
+
+    // Delay ONLY rising edges (0 -> 1.2 V) by td_skew; falling edges (1.2 V -> 0) happen immediately
+    // This forces both transitions to cross low (around ~0.33 V instead of 0.6 V)
+    V(B7)   <+ transition(b7_v,  (b7_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B6)   <+ transition(b6_v,  (b6_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B5)   <+ transition(b5_v,  (b5_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B4)   <+ transition(b4_v,  (b4_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B3)   <+ transition(b3_v,  (b3_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B2)   <+ transition(b2_v,  (b2_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B1)   <+ transition(b1_v,  (b1_v  > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B0)   <+ transition(b0_v,  (b0_v  > 0.6) ? td_skew : 0.0, trf, trf);
+
+    V(B4_b) <+ transition(b4b_v, (b4b_v > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B3_b) <+ transition(b3b_v, (b3b_v > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B2_b) <+ transition(b2b_v, (b2b_v > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B1_b) <+ transition(b1b_v, (b1b_v > 0.6) ? td_skew : 0.0, trf, trf);
+    V(B0_b) <+ transition(b0b_v, (b0b_v > 0.6) ? td_skew : 0.0, trf, trf);
+  end
+endmodule

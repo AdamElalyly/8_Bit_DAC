@@ -1,9 +1,0 @@
-// VerilogA for DAC, decoder_3to7_2, veriloga
-
-`include "constants.vams"
-`include "disciplines.vams"
-
-module decoder_3to7_2;
-
-
-endmodule

@@ -1,9 +1,0 @@
-// VerilogA for DAC, dac_dc_ctrl, veriloga
-
-`include "constants.vams"
-`include "disciplines.vams"
-
-module dac_dc_ctrl;
-
-
-endmodule
